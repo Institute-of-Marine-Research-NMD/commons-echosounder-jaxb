@@ -39,7 +39,7 @@
             <xs:element name="lat_stop" type="xs:string" minOccurs="1" maxOccurs="1" />
             <xs:element name="lon_start" type="xs:decimal" minOccurs="1" maxOccurs="1" />
             <xs:element name="lon_stop" type="xs:string" minOccurs="1" maxOccurs="1" />
-            <xs:element name="frequency" type="echosounder_dataset:frequencyType" minOccurs="1" maxOccurs="1" />
+            <xs:element name="frequency" type="echosounder_dataset:frequencyType" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
         <xs:attribute name="log_start" type="xs:decimal" />
         <xs:attribute name="start_time" type="xs:string" />

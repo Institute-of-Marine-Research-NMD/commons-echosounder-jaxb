@@ -1,40 +1,21 @@
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Iterator;
-import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.ValidationEvent;
 import javax.xml.bind.ValidationEventHandler;
-import javax.xml.namespace.NamespaceContext;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.validation.Schema;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
-import no.imr.nmdapi.generic.nmdechosounder.domain.luf20.ChTypeType;
-import no.imr.nmdapi.generic.nmdechosounder.domain.luf20.Distance;
-import no.imr.nmdapi.generic.nmdechosounder.domain.luf20.EchosounderDatasetType;
-import no.imr.nmdapi.generic.nmdechosounder.domain.luf20.SaByAcocatType;
-import no.imr.nmdapi.generic.nmdechosounder.domain.luf20.SaType;
 import org.junit.After;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
@@ -61,7 +42,7 @@ public class TestMarshallUnMarshallEquality {
                                        event.getLinkedException());
             }
         });
-        JAXBElement<EchosounderDatasetType> o = (JAXBElement)u.unmarshal(Thread.currentThread().getContextClassLoader().getResourceAsStream("luf20_2010205.xml"));
+        Object o = u.unmarshal(Thread.currentThread().getContextClassLoader().getResourceAsStream("luf20_2010205.xml"));
         Marshaller marshall = jc.createMarshaller();
         marshall.marshal(o, tempFile);
     }

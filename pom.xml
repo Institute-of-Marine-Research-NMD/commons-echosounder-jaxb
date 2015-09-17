@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>no.imr.nmd.commons.echosounder.jaxb</groupId>
     <artifactId>commons-echosounder-jaxb</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
     <name>Commons - Echosounder JaxB</name>
     <repositories>
@@ -122,7 +122,7 @@
         <connection>scm:git:git@github.com:Institute-of-Marine-Research-NMD/commons-echosounder-jaxb.git</connection>
         <url>scm:git:git@github.com:Institute-of-Marine-Research-NMD/commons-echosounder-jaxb.git</url>
         <developerConnection>scm:git:git@github.com:Institute-of-Marine-Research-NMD/commons-echosounder-jaxb.git</developerConnection>
-        <tag>commons-echosounder-jaxb-1.0.1</tag>
+        <tag>commons-echosounder-jaxb-1.0.2</tag>
     </scm>
     <distributionManagement>
         <repository>

@@ -9,7 +9,7 @@
     <!--
     This document is referenced from the pom and is used to change the generated classes.
     The following has been added. -->
-    <jxb:bindings schemaLocation="../resources/echo.xsd" node="/xs:schema">
+    <jxb:bindings schemaLocation="../resources/echov1.xsd" node="/xs:schema">
         <jxb:globalBindings generateElementProperty="false" >
             <jxb:serializable uid="1" />
         </jxb:globalBindings>

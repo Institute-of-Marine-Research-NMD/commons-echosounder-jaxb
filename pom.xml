@@ -45,6 +45,19 @@
                         </goals>
                         <configuration>
                             <packageLevelAnnotations>true</packageLevelAnnotations>
+                            <schemas>
+                                <schema>
+                                    <fileset>
+                                        <directory>${basedir}/src/main/resources</directory>
+                                        <includes>
+                                            <include>echov1.xsd</include>
+                                        </includes>
+                                        <excludes>
+                                            <exclude>*.*</exclude>
+                                        </excludes>
+                                    </fileset>
+                                </schema>
+                            </schemas>
                             <schemaDirectory>${basedir}/src/main/resources</schemaDirectory>
                             <forceRegenerate>true</forceRegenerate>
                             <generateDirectory>${project.build.directory}/generated-sources/xjc</generateDirectory>

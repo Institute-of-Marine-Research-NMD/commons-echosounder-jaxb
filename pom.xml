@@ -44,7 +44,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <packageLevelAnnotations>false</packageLevelAnnotations>
+                            <packageLevelAnnotations>true</packageLevelAnnotations>
                             <schemaDirectory>${basedir}/src/main/resources</schemaDirectory>
                             <forceRegenerate>true</forceRegenerate>
                             <generateDirectory>${project.build.directory}/generated-sources/xjc</generateDirectory>

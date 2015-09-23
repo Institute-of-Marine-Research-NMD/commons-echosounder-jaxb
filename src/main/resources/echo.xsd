@@ -5,5 +5,5 @@
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified">
-           <xs:import namespace="http://www.imr.no/formats/nmdechosounder/v1" schemaLocation="echov1.v1" />
+           <xs:import namespace="http://www.imr.no/formats/nmdechosounder/v1" schemaLocation="echov1.xsd" />
 </xs:schema>

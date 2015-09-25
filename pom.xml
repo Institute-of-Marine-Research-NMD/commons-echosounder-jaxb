@@ -58,7 +58,6 @@
                                     </fileset>
                                 </schema>
                             </schemas>
-                            <forceRegenerate>true</forceRegenerate>
                             <generateDirectory>${project.build.directory}/generated-sources/xjc</generateDirectory>
                             <verbose>true</verbose>
                             <bindingDirectory>${basedir}/src/main/bindings</bindingDirectory>

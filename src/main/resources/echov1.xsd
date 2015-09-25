@@ -31,33 +31,33 @@
     <xs:complexType name="distance">
         <xs:sequence>
             <xs:element name="stop_time" type="xs:string" minOccurs="1" maxOccurs="1" />
-            <xs:element name="integrator_dist" type="xs:decimal" minOccurs="1" maxOccurs="1" />
-            <xs:element name="pel_ch_thickness" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+            <xs:element name="integrator_dist" type="xs:double" minOccurs="1" maxOccurs="1" />
+            <xs:element name="pel_ch_thickness" type="xs:double" minOccurs="1" maxOccurs="1" />
             <xs:element name="bot_ch_thickness" type="xs:string" minOccurs="1" maxOccurs="1" />
             <xs:element name="include_estimate" type="xs:integer" minOccurs="1" maxOccurs="1" />
-            <xs:element name="lat_start" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+            <xs:element name="lat_start" type="xs:double" minOccurs="1" maxOccurs="1" />
             <xs:element name="lat_stop" type="xs:string" minOccurs="1" maxOccurs="1" />
-            <xs:element name="lon_start" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+            <xs:element name="lon_start" type="xs:double" minOccurs="1" maxOccurs="1" />
             <xs:element name="lon_stop" type="xs:string" minOccurs="1" maxOccurs="1" />
             <xs:element name="frequency" type="echosounder_dataset:frequencyType" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
-        <xs:attribute name="log_start" type="xs:decimal" />
+        <xs:attribute name="log_start" type="xs:double" />
         <xs:attribute name="start_time" type="xs:string" />
     </xs:complexType>
 
     <xs:complexType name="frequencyType">
         <xs:sequence>
-            <xs:element name="threshold" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+            <xs:element name="threshold" type="xs:double" minOccurs="1" maxOccurs="1" />
             <xs:element name="num_pel_ch" type="xs:integer" minOccurs="1" maxOccurs="1" />
             <xs:element name="num_bot_ch" type="xs:integer" minOccurs="1" maxOccurs="1" />
-            <xs:element name="min_bot_depth" type="xs:decimal" minOccurs="1" maxOccurs="1" />
-            <xs:element name="max_bot_depth" type="xs:decimal" minOccurs="1" maxOccurs="1" />
-            <xs:element name="upper_interpret_depth" type="xs:decimal" minOccurs="1" maxOccurs="1" />
-            <xs:element name="lower_interpret_depth" type="xs:decimal" minOccurs="1" maxOccurs="1" />
-            <xs:element name="upper_integrator_depth" type="xs:decimal" minOccurs="1" maxOccurs="1" />
-            <xs:element name="lower_integrator_depth" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+            <xs:element name="min_bot_depth" type="xs:double" minOccurs="1" maxOccurs="1" />
+            <xs:element name="max_bot_depth" type="xs:double" minOccurs="1" maxOccurs="1" />
+            <xs:element name="upper_interpret_depth" type="xs:double" minOccurs="1" maxOccurs="1" />
+            <xs:element name="lower_interpret_depth" type="xs:double" minOccurs="1" maxOccurs="1" />
+            <xs:element name="upper_integrator_depth" type="xs:double" minOccurs="1" maxOccurs="1" />
+            <xs:element name="lower_integrator_depth" type="xs:double" minOccurs="1" maxOccurs="1" />
             <xs:element name="quality" type="xs:integer" minOccurs="1" maxOccurs="1" />
-            <xs:element name="bubble_corr" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+            <xs:element name="bubble_corr" type="xs:double" minOccurs="1" maxOccurs="1" />
             <xs:element name="ch_type" type="echosounder_dataset:chTypeType" minOccurs="1" maxOccurs="2" />
         </xs:sequence>
         <xs:attribute name="freq" type="xs:integer" />
